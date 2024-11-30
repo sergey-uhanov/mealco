@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Urban remedy</title>
+	<link rel="stylesheet" href="./css/styles.css">
+	 <link rel="stylesheet" href="./css/header.css">
+</head>
+<body>
+	<header class="header-index">
+  <div class="container">
+    
+    <div class="header header-index">
+      <div class="header__burger-btn" aria-label="Toggle navigation" id="burgerMenu" ></div>
+      <div class="header__logo">
+        <a href="/" class="header__logo-link"><img src="./assets/icons/logo.svg" alt="logo"></a>
+      </div>
+      <div class="header__menu " id="mobileNav">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="brands.html" class="header__link">Brands</a>
+            </li>
+            <li class="header__item ">
+              <a href="press.html" class="header__link">Press</a>
+            </li>
+          </ul>
+        </nav>
+        <button onclick="openPopup()" class="header__button openPopup">Join our waitlist!</button>
+      </div> 
+    </div>
+  </div>
+</header> 
+
+
+	 
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span id="closePopup" class="close"><img src="./assets/icons/close.svg" alt=""></span>
+     <div id="popupWrapper"  class="popup-wrapper">
+		 <form id="popupForm" class="popup-form " action="#" method="GET">
+			<ul class="popup-form__input-grup">
+				<li class="popup-form__title">Join our waitlist</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="name">Name</label>
+				<input class="popup-form__input"  id="name" type="text" name="name"  required>
+				</li>
+				<li class="popup-form__item"> 
+					<label class="popup-form__label" for="LastName">Last name</label>
+				<input class="popup-form__input"  id="LastName" type="text" name="LastName"   required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="phone">Phone</label>
+				<input class="popup-form__input"  id="phone" type="tel" name="phone"   required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="email">Email</label>
+				<input class="popup-form__input"  id="email" type="email" name="email" required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="restaurantName">Restaurant name</label>
+				<input class="popup-form__input"  id="restaurantName" type="text" name="restaurantName"  required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="restaurantAddress">Restaurant address</label>
+				<input class="popup-form__input"  id="restaurantAddress" type="text" name="restaurantAddress" required>
+				</li>
+				
+			</ul>
+			<button id="popupSubmitBtn" class="wide-btn wide-btn--popup  wide-btn--popup-responsive" type="submit" >Submit</button>
+			<section class=" for-partners for-partners--popup">
+		
+			<div class="for-partners__wrapper">
+						<h4 class="for-partners__title">Mealco’s partners get </h4>
+				<div class="card card--card-partner">
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+				</div>
+				
+			</div>
+		
+	 </section>
+	 
+	 <button id="popupSubmitBtn" class="wide-btn wide-btn--popup" type="submit" >Submit</button>
+		</form>
+		<div id="popupSuccess" class="success-massage hidden">
+			<h3 class="success-massage__title">Thank you for your interest!</h3>
+			<div class="success-massage__subtitle">Someone from our team will be reaching out soon. In the meantime, check our brands.</div>
+			<button id="closePopupSuccess" class="wide-btn"  >Check brands</button>
+		</div>
+	  </div>
+    </div>
+  </div>
+	<main>
+		<section>
+			
+			<div class="container">
+					<div class=" details-first-screen">
+						<div onclick="pushBack()" class="button-back ">
+							<img src="./assets/icons/Arrow.svg" alt="picture">
+						</div>
+					<div class="details-first-screen__text-block">
+						<img src="./assets/other/Page1.webp" alt="logo">
+							<div class="details-first-screen__text">Effortlessly elegant desserts made with
+								the highest quality ingredients to create
+								the perfect balance of sweet and savory. 
+							</div>
+					</div>
+					<div class="details-first-screen__image-block">
+						<img src="./assets/other/3.webp" alt="picture">
+					</div>
+				</div>
+				
+				<div class="menu">
+					<div class="menu__title">Menu</div>
+					 <div class="menu__controls">
+						<button class="menu__control active" data-group="all">All</button>
+						<button class="menu__control" data-group="group1">Multiples</button>
+						<button class="menu__control" data-group="group2">Puds</button>
+						<button class="menu__control" data-group="group3">Messes</button>
+						<button class="menu__control" data-group="group4">Cakes</button>
+					</div>
+					<div class="menu__groups">
+						<div class="menu__group active" data-group="group1">
+						
+					<div class="menu__subtitle">Multiples</div>
+					<div class="menu__unit ">
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/Photo(4).webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Pick Three	</div>
+									<div class="card__price">$22</div>
+								</div>
+							</div>					
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/3.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Half Doz Assortment	</div>
+									<div class="card__price">$39</div>
+								</div>
+							
+						</div>
+					</div>
+					
+					
+					</div>
+					<div class="menu__group active" data-group="group2">
+						<div class="menu__subtitle">Puds</div>
+						<div class="menu__unit ">
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/4.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Praline Chocolate Pud</div>
+									<div class="card__price">$8</div>
+								</div>
+							</div>
+						
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/5.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Salt of the Earth Pud</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/6.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Pick Three	</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+					</div>
+					</div>
+					<div class="menu__group active" data-group="group3">
+						<div class="menu__subtitle">Messes</div>
+					<div class="menu__unit ">
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/7.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Berry Mess</div>
+									<div class="card__price">$8</div>
+								</div>
+							</div>
+						
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/8.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Roasted Coconut Mess</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/9.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Cookies & Cream Mess</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/11.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Mocha Mess</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+					</div>
+					</div>
+
+					<div class="menu__group active" data-group="group4">
+						<div class="menu__subtitle">Cakes</div>
+					<div class="menu__unit ">
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/11.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Chocolatey Uno
+Mas Leche</div>
+									<div class="card__price">$8</div>
+								</div>
+							</div>						
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/17.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Berry Vanilla
+Chiffon Cake</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/1.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Victoria's
+Birthday Cake</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/18.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Whoopie Pie</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/11.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Chocolatey Uno
+Mas Leche</div>
+									<div class="card__price">$8</div>
+								</div>
+							</div>
+						
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/17.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Berry Vanilla
+Chiffon Cake</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/13.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Victoria's
+Birthday Cake</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/16.webp" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Whoopie Pie</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+					</div>
+					</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+	<div class="container">
+		<div class="footer">
+			<div class="footer__logo">
+				<img src="./assets/icons/footerLogo.svg" alt="Logo">
+			</div>
+			<div class="footer__links">
+				<div class="footer__copyright">2022 © Mealco</div>
+				<nav class="footer__menu">
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Careers</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Brands</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Press</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+</footer>
+	    <script  src="./js/pop.js"></script>
+</body>
+</html>

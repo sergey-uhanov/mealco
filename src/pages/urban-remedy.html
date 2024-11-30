@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Urban remedy</title>
+	<link rel="stylesheet" href="./css/styles.css">
+	 <link rel="stylesheet" href="./css/header.css">
+</head>
+<body>
+	@@include('../partials/header.html', {headerClass: 'header-index'})
+	@@include('../partials/popup.html')
+	<main>
+		<section>
+			
+			<div class="container">
+					<div class=" details-first-screen">
+						<div onclick="pushBack()" class="button-back ">
+							<img src="./assets/icons/Arrow.svg" alt="picture">
+						</div>
+					<div class="details-first-screen__text-block">
+						<img src="./assets/other/Page1.png" alt="logo">
+							<div class="details-first-screen__text">Effortlessly elegant desserts made with
+								the highest quality ingredients to create
+								the perfect balance of sweet and savory. 
+							</div>
+					</div>
+					<div class="details-first-screen__image-block">
+						<img src="./assets/other/3.png" alt="picture">
+					</div>
+				</div>
+				
+				<div class="menu">
+					<div class="menu__title">Menu</div>
+					 <div class="menu__controls">
+						<button class="menu__control active" data-group="all">All</button>
+						<button class="menu__control" data-group="group1">Multiples</button>
+						<button class="menu__control" data-group="group2">Puds</button>
+						<button class="menu__control" data-group="group3">Messes</button>
+						<button class="menu__control" data-group="group4">Cakes</button>
+					</div>
+					<div class="menu__groups">
+						<div class="menu__group active" data-group="group1">
+						
+					<div class="menu__subtitle">Multiples</div>
+					<div class="menu__unit ">
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/Photo(4).png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Pick Three	</div>
+									<div class="card__price">$22</div>
+								</div>
+							</div>					
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/3.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Half Doz Assortment	</div>
+									<div class="card__price">$39</div>
+								</div>
+							
+						</div>
+					</div>
+					
+					
+					</div>
+					<div class="menu__group active" data-group="group2">
+						<div class="menu__subtitle">Puds</div>
+						<div class="menu__unit ">
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/4.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Praline Chocolate Pud</div>
+									<div class="card__price">$8</div>
+								</div>
+							</div>
+						
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/5.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Salt of the Earth Pud</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/6.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Pick Three	</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+					</div>
+					</div>
+					<div class="menu__group active" data-group="group3">
+						<div class="menu__subtitle">Messes</div>
+					<div class="menu__unit ">
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/7.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Berry Mess</div>
+									<div class="card__price">$8</div>
+								</div>
+							</div>
+						
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/8.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Roasted Coconut Mess</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/9.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Cookies & Cream Mess</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/11.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Mocha Mess</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+					</div>
+					</div>
+
+					<div class="menu__group active" data-group="group4">
+						<div class="menu__subtitle">Cakes</div>
+					<div class="menu__unit ">
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/11.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Chocolatey Uno
+Mas Leche</div>
+									<div class="card__price">$8</div>
+								</div>
+							</div>						
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/17.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Berry Vanilla
+Chiffon Cake</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/1.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Victoria's
+Birthday Cake</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/18.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Whoopie Pie</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/11.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Chocolatey Uno
+Mas Leche</div>
+									<div class="card__price">$8</div>
+								</div>
+							</div>
+						
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/17.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Berry Vanilla
+Chiffon Cake</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/13.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Victoria's
+Birthday Cake</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/meals/16.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Whoopie Pie</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+					</div>
+					</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('../partials/footer.html')
+	    <script  src="./js/pop.js"></script>
+</body>
+</html>

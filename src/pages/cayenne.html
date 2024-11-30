@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cayenne</title>
+	<link rel="stylesheet" href="./css/styles.css">
+	 <link rel="stylesheet" href="./css/header.css">
+</head>
+<body>
+	@@include('../partials/header.html', {headerClass: 'header-index'})
+	@@include('../partials/popup.html')
+	<main>
+		<section>
+			
+			<div class="container">
+					<div class=" details-first-screen">
+						<div onclick="pushBack()" class="button-back ">
+							<img src="./assets/icons/Arrow.svg" alt="">
+						</div>
+					<div class="details-first-screen__text-block">
+						<img src="./assets/cayenne/1.svg" alt="logo">
+							<div class="details-first-screen__text">Nashville Hot Chicken and irresistible
+Southern sides epitomize comfort food.
+							</div>
+					</div>
+					<div class="details-first-screen__image-block">
+						<img src="./assets/cayenne/3.png" alt="">
+					</div>
+				</div>
+				<div class=" author">						
+							<div class="author__image-block">
+						<img src="./assets/cayenne/2.webp" alt="picture author">
+					</div>
+					<div class="author__text-block">
+						<div class="author__title">
+							Crafted by
+Chef Hillary
+Sterling
+						</div>
+						<div class="author__image-block author__image-block-response">
+						<img src="./assets/cayenne/2.webp" alt="">
+					</div>
+							<div class="author__text">Born and raised in NYC, Chef Hillary Sterling fell in love with food & hospitality at a young age. She flourished while working with renowned chefs from Bobby Flay, to Joe Bastianich, and Missy Robbins. Hillary was formerly chef of acclaimed Italian restaurant, Vic’s and is currently chef/co-developer of Cayenne.
+							</div>
+					</div>
+					
+				</div>
+				<div class="menu">
+					<div class="menu__title">Menu</div>
+					 <div class="menu__controls">
+						<button class="menu__control active" data-group="all">All</button>
+						<button class="menu__control" data-group="Sandwiches">Sandwiches</button>
+						<button class="menu__control" data-group="Sides">Sides</button>
+						<button class="menu__control" data-group="Beverages">Beverages</button>
+						
+					</div>
+					<div class="menu__groups">
+						<div class="menu__group active" data-group="Sandwiches">
+						
+					<div class="menu__subtitle">Sandwiches</div>
+					<div class="menu__unit ">
+						
+							<div class="card card--card-wide card--card-wide-text-left ">
+								<img src="./assets/cayenne/5.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Mild or Spicy topped with pickles</div>
+									<div class="card__price">$12.95</div>
+								</div>
+							</div>					
+							<div class="card card--card-wide card--card-wide-text-left no-img">
+								
+								<div class="card__text-side ">
+									<div class="card__title">Chicken With Cheese	</div>
+									<div class="card__price">$11.95</div>
+								</div>
+							
+						</div>
+						<div class="card card--card-wide card--card-wide-text-left no-img">
+								
+								<div class="card__text-side ">
+									<div class="card__title">Classic Crispy Chicken	</div>
+									<div class="card__price">$11.95</div>
+								</div>
+							
+						</div>
+						<div class="card card--card-wide card--card-wide-text-left no-img">								
+								<div class="card__text-side ">
+									<div class="card__title">Chicken Bacon Ranch	</div>
+									<div class="card__price">$14.95</div>
+								</div>							
+						</div>
+					</div>
+					
+					
+					</div>
+					<div class="menu__group active" data-group="Sides">
+						<div class="menu__subtitle">Sides</div>
+						<div class="menu__unit ">
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/cayenne/6.png" alt="pict">
+								<div class="card__text-side ">
+									<div class="card__title">Fries</div>
+									<div class="card__price">$4.5</div>
+								</div>
+							</div>
+						
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/cayenne/6.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Spiced Fries</div>
+									<div class="card__price">$$4.95</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left no-img">								
+								<div class="card__text-side ">
+									<div class="card__title">Chicken Bacon Ranch	</div>
+									<div class="card__price">$14.95</div>
+								</div>							
+						</div><div class="card card--card-wide card--card-wide-text-left no-img">								
+								<div class="card__text-side ">
+									<div class="card__title">Chicken Bacon Ranch	</div>
+									<div class="card__price">$14.95</div>
+								</div>							
+						</div><div class="card card--card-wide card--card-wide-text-left no-img">								
+								<div class="card__text-side ">
+									<div class="card__title">Chicken Bacon Ranch	</div>
+									<div class="card__price">$14.95</div>
+								</div>							
+						</div><div class="card card--card-wide card--card-wide-text-left no-img">								
+								<div class="card__text-side ">
+									<div class="card__title">Chicken Bacon Ranch	</div>
+									<div class="card__price">$14.95</div>
+								</div>							
+						</div>
+					</div>
+					</div>
+					
+
+					<div class="menu__group active" data-group="Beverages">
+						<div class="menu__subtitle">Beverages</div>
+					<div class="menu__unit ">
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/cayenne/7.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Coke</div>
+									<div class="card__price">$8</div>
+								</div>
+							</div>						
+						
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/cayenne/8.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Diet Coke</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+							<div class="card card--card-wide card--card-wide-text-left">
+								<img src="./assets/cayenne/9.png" alt="logo">
+								<div class="card__text-side ">
+									<div class="card__title">Diet Coke</div>
+									<div class="card__price">$8</div>
+								</div>							
+							</div>
+					</div>
+					</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('../partials/footer.html')
+	    <script  src="./js/pop.js"></script>
+</body>
+</html>

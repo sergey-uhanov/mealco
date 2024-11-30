@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* Устанавливаем базовые стили для всех элементов */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Убираем стили списка для упрощения работы */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Убираем подчеркивание ссылок и другие стили */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Убираем стандартные отступы для заголовков и абзацев */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Сброс стилей для таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 0;
+  text-align: left;
+}
+
+/* Убираем стили форм */
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Задаем стандартное поведение для изображений */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Сброс стилей для форматов HTML5 */
+address {
+  font-style: normal;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Сброс стилей для элементов body и html */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 100%;
+}
+
+/* Сброс стилей кнопок для accessibility */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Скрываем элементы для улучшения UX */
+[hidden] {
+  display: none;
+}
+
+/* Адаптация для удобной прокрутки на сенсорных устройствах */
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+	 <link rel="stylesheet" href="./css/styles.css">
+	 <link rel="stylesheet" href="./css/header.css">	 
+	<title>Mealco</title>
+	 
+</head>
+<body>
+	<header class="header-index">
+  <div class="container">
+    
+    <div class="header header-index">
+      <div class="header__burger-btn" aria-label="Toggle navigation" id="burgerMenu" ></div>
+      <div class="header__logo">
+        <a href="/" class="header__logo-link"><img src="./assets/icons/logo.svg" alt="logo"></a>
+      </div>
+      <div class="header__menu " id="mobileNav">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="brands.html" class="header__link">Brands</a>
+            </li>
+            <li class="header__item ">
+              <a href="press.html" class="header__link">Press</a>
+            </li>
+          </ul>
+        </nav>
+        <button onclick="openPopup()" class="header__button openPopup">Join our waitlist!</button>
+      </div> 
+    </div>
+  </div>
+</header> 
+
+
+	 
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span id="closePopup" class="close"><img src="./assets/icons/close.svg" alt=""></span>
+     <div id="popupWrapper"  class="popup-wrapper">
+		 <form id="popupForm" class="popup-form " action="#" method="GET">
+			<ul class="popup-form__input-grup">
+				<li class="popup-form__title">Join our waitlist</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="name">Name</label>
+				<input class="popup-form__input"  id="name" type="text" name="name"  required>
+				</li>
+				<li class="popup-form__item"> 
+					<label class="popup-form__label" for="LastName">Last name</label>
+				<input class="popup-form__input"  id="LastName" type="text" name="LastName"   required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="phone">Phone</label>
+				<input class="popup-form__input"  id="phone" type="tel" name="phone"   required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="email">Email</label>
+				<input class="popup-form__input"  id="email" type="email" name="email" required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="restaurantName">Restaurant name</label>
+				<input class="popup-form__input"  id="restaurantName" type="text" name="restaurantName"  required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="restaurantAddress">Restaurant address</label>
+				<input class="popup-form__input"  id="restaurantAddress" type="text" name="restaurantAddress" required>
+				</li>
+				
+			</ul>
+			<button id="popupSubmitBtn" class="wide-btn wide-btn--popup  wide-btn--popup-responsive" type="submit" >Submit</button>
+			<section class=" for-partners for-partners--popup">
+		
+			<div class="for-partners__wrapper">
+						<h4 class="for-partners__title">Mealco’s partners get </h4>
+				<div class="card card--card-partner">
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+				</div>
+				
+			</div>
+		
+	 </section>
+	 
+	 <button id="popupSubmitBtn" class="wide-btn wide-btn--popup" type="submit" >Submit</button>
+		</form>
+		<div id="popupSuccess" class="success-massage hidden">
+			<h3 class="success-massage__title">Thank you for your interest!</h3>
+			<div class="success-massage__subtitle">Someone from our team will be reaching out soon. In the meantime, check our brands.</div>
+			<button id="closePopupSuccess" class="wide-btn"  >Check brands</button>
+		</div>
+	  </div>
+    </div>
+  </div>
+	<section class="first-screen">
+		<div class="container">
+			<h1 class="first-screen__title">Monetize your restaurant’s 
+			unused capacity 
+		</h1>
+		<div class="first-screen__text">
+				Multiply online revenues by fulfilling Mealco orders through third party deliveries
+			using your existing kitchen and staff
+		</div>
+		<button onclick="openPopup()"  class="wide-btn ">Join our waitlist!!</button>
+		
+		<img class="first-screen__img  first-screen__img-orange-circle" src="./assets/home/YELLOWCIRCLE.svg" alt="figure">
+		<div class="first-screen__blue-curl-wrapper">
+			<img class="first-screen__img  first-screen__img-blue-curl" src="./assets/home/Group.svg" alt="figure">
+		</div>
+		</div>
+		<div class="first-screen__img-wrapper">
+			
+		<img class="first-screen__img  first-screen__img-red-points" src="./assets/home/REDCIRCLES.svg" alt="figure">
+		
+		<img class="first-screen__img  first-screen__img-purpule-curl" src="./assets/home/PURPLEC.svg" alt="figure">
+		<img class="first-screen__img  first-screen__img-blue-circle" src="./assets/home/BLUECIRCLE.svg" alt="figure">
+		<div class="first-screen__img-wrapper-inner">
+			<img class="first-screen__img  first-screen__img-pink-sticks" src="./assets/home/PINKSTICKS.svg" alt="figure">
+		</div>
+				
+		</div> 
+	</section>
+	 <div class="plug">
+		<h4 class="plug__title">
+			It's easy to join
+		</h4>
+	</div>
+	 <section class="card-section">
+		<div class="container"> 
+			<div class="card-wrapper">
+				<div class="card">
+					<div class="card__icon">
+						<img src="./assets/home/Donut3.svg" alt="icon">
+					</div>
+					<h5 class="card__title">
+						We match you with your soulmate Mealco brand
+					</h5>
+					<p class="card__text">
+						by listening to your unique needs and leveraging our
+data generated from
+thousands of orders.
+					</p>
+				</div>
+				<div class="card">
+					
+					<div class="card__icon">
+						<img src="./assets/home/Group64(1).svg" alt="icon">
+					</div>
+					<h5 class="card__title">
+						We provide you with a
+free tablet and printer
+					</h5>
+					<p class="card__text">
+						You receive all orders <br/> in a single device.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card__icon">
+						<img src="./assets/home/Coin1.svg" alt="icon">
+					</div>
+					<h5 class="card__title">
+						You are all set!					
+					</h5>
+					<p class="card__text">
+						Start earning incremental revenues from a new brand every day.
+					</p>
+				</div>
+			</div>
+		</div>
+	 </section>
+	 
+	 <section class="for-partners">
+		<div class="container">
+			<div class="for-partners__wrapper">
+						<h4 class="for-partners__title">Mealco’s partners get </h4>
+				<div class="card card--card-partner">
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+				</div>
+				<div class="for-partners__subtitle">
+					Concerned about food delivery costs?
+				</div>
+				<p class="for-partners__text">
+					We’ve got you covered! Mealco pays all <br/>
+					third-party delivery fees
+				</p>
+			</div>
+		</div>
+	 </section>
+	 
+	 <section class="slider-section">
+	<div class="container">
+		<h4 class="slider-section__title">Mealco’s collection of high-demand brands can be operated with minimal
+equipment and training</h4>
+			<div class="swiper">
+			
+				<div class="swiper-wrapper"> 
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto.webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/MoreishLogo_CMYKCopy1.webp" alt="product logo">
+							<button class="small-btn"><a href="/moreish.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(1).webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/1.webp" alt="product logo">
+							<button class="small-btn"><a href="/cayenne.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(2).webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/mochidoki1.webp" alt="product logo">
+							<button class="small-btn"><a href="/mochidoki.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(3).webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/Maskgroup.webp" alt="product logo">
+							<button class="small-btn"><a href="/nuchas.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Pressedphoto(1).webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/NEW_PressedLogoCopy1.webp" alt="product logo">
+							<button class="small-btn"><a href="/pressed.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/AmpleHillsPhoto.webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/image3.webp" alt="product logo">
+							<button class="small-btn"><a href="/ampel-hills.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(1).webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/image6.webp" alt="product logo">
+							<button class="small-btn"><a href="/num-pang.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(6).webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/Maskgroup(1).webp" alt="product logo">
+							<button class="small-btn"><a href="/poutine.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Photo.webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/properindian1.webp" alt="product logo">
+							<button class="small-btn"><a href="/proper-indian.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(7).webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/Urbanremedylogo1.webp" alt="product logo">
+							<button class="small-btn"><a href="/urban-remedy.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-block">				
+			<div class="swiper-button-prev"><img src="./assets/icons/Arrow.svg" alt=""></div>
+			<div class="swiper-button-next"><img src="./assets/icons/Arrow.svg" alt=""></div>
+			</div>
+			
+</div>
+	</div>
+  
+	 </section>
+	 
+	 <section class="promotion-section">
+		<div class="container">
+			 <div class="promotion">
+				<div class="promotion__text-block">
+					<img  class="promotion__logo-responsive" src="./assets/card/icon/MoreishLogo_CMYKCopy1.webp" alt="logo">
+					<h4 class="promotion__title">Vince</h4>
+					<p class="promotion__subtitle">Owner, Koo Restaurant</p>
+					<p class="promotion__text">“Moreish is what sparked our interest in Mealco - the minimal impact on our labor and resources creates a unique and simple solution for generating value in a market with limited staffing”</p>
+					<div class="promotion__card card">In just 3 months,  Mealco operates  <span>65%</span> <br> of Koo’s delivery business</div>
+				</div>
+				<div class="promotion__img-block">
+					
+				</div>
+				<img  class="promotion__logo" src="./assets/card/icon/MoreishLogo_CMYKCopy1.webp" alt="logo">
+			 </div>
+		</div>
+	 </section>
+	 
+	 <section class="call-action-section">
+		<div class="container">	
+			<h1 class="call-action-section__title">Ready to start earning additional revenues?
+			</h1>
+		<button class="wide-btn">Join our waitlist!</button>
+		</div>
+	 </section>
+	 <div class="plug">
+		<h4 class="plug__title">
+			Mealco in the news
+		</h4>
+	</div>
+	
+	<section class="news-section">
+		<div class="container">
+			<div class="wide-card-wrapper">
+				<div class="card card--card-wide">
+				<img src="./assets/card/wideCard/Photo.webp" alt="logo">
+				<div class="card__text-side">
+					Mealco raises $7M to launch new delivery-centric restaurants
+				</div>
+			</div>
+			<div class="card card--card-wide">
+				<img src="./assets/card/wideCard/Photo(2).webp" alt="logo">
+				<div class="card__text-side">
+					Startup Mealco wants to streamline
+the virtual
+brand model
+				</div>
+			</div>
+			<div class="card card--card-wide">
+				<img src="./assets/card/wideCard/Photo(3).webp" alt="logo">
+				<div class="card__text-side">
+					Virtual restaurant start-up lands $7M in funding
+				</div>
+			</div>
+			<div class="card card--card-wide">
+				<img src="./assets/card/wideCard/Photo(1).webp" alt="logo">
+				<div class="card__text-side">
+					Mealco Raises $7M to Enable Chefs to Launch and Manage Virtual...
+				</div>
+			</div>
+			</div>
+			<button class="mid-btn mid-btn--news">Read more!</button>
+		</div>
+	</section>
+	<footer>
+	<div class="container">
+		<div class="footer">
+			<div class="footer__logo">
+				<img src="./assets/icons/footerLogo.svg" alt="Logo">
+			</div>
+			<div class="footer__links">
+				<div class="footer__copyright">2022 © Mealco</div>
+				<nav class="footer__menu">
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Careers</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Brands</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Press</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+</footer> 
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+	    <script  src="./js/main.js"></script>
+	    <script  src="./js/swiper.js"></script>
+</body>
+</html>

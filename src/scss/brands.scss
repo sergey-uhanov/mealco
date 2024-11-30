@@ -1,0 +1,54 @@
+.main-brands {
+	background-color: #06d2cc;
+	margin-top: 100px;
+	padding-bottom: 100px;
+	position: relative;
+	z-index: 0;
+	&__wrapper {
+		padding-left: 40px;
+	}
+}
+.main-title--brands {
+	background-color: #06d2cc;
+	font-size: 65px;
+	padding: 40px 0 0 0;
+}
+.wide-card-wrapper.wide-card-wrapper--press {
+}
+.small-text {
+	font-size: 2rem;
+	font-family: "Nunito Sans";
+	color: #1c1526;
+}
+.small-text--brands {
+	max-width: 845px;
+	padding-bottom: 22px;
+}
+.square-card-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 44px;
+	.square-card-item {
+		.card {
+			margin: 0;
+		}
+	}
+}
+@media (max-width: 1280px) {
+	.main-brands__wrapper {
+		padding-left: calc(0px + 40 * ((100vw - 320px) / (1280 - 320)));
+	}
+	.main-title--brands {
+		font-size: calc(33px + 57 * ((100vw - 320px) / (1280 - 320)));
+		line-height: 1.1;
+	}
+	.news-section--press {
+		padding-top: calc(0px + 98 * ((100vw - 320px) / (1280 - 320)));
+	}
+	.square-card-wrapper {
+		gap: 20px;
+	}
+	.small-text--brands {
+		font-size: calc(21px + 11 * ((100vw - 320px) / (1280 - 320)));
+	}
+}

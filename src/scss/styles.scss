@@ -1,0 +1,29 @@
+@import "./_variables.scss";
+@import "./reset.scss";
+@import "./home";
+@import "./fonts.scss";
+@import "./_button.scss";
+@import "./card.scss";
+@import "./footer.scss";
+@import "./popup.scss";
+@import "./press.scss";
+@import "./brands.scss";
+@import "./details-pages.scss";
+
+body {
+	font-family: "Sculpin", sans-serif;
+	font-weight: 500;
+}
+.overflow-hidden {
+	overflow: hidden;
+}
+.container {
+	max-width: 1370px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+@media (hover: none) {
+	*:hover {
+		hover: none; /* Деактивируем состояние hover */
+	}
+}

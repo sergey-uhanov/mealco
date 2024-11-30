@@ -1,0 +1,24 @@
+.main-press {
+	background-color: #bc8cff;
+	margin-top: 100px;
+	padding-bottom: 100px;
+}
+.main-title {
+	background-color: #bc8cff;
+	font-size: 3.5rem;
+}
+.wide-card-wrapper.wide-card-wrapper--press {
+}
+.small-text {
+	font-size: 2rem;
+	font-family: "Nunito Sans";
+	color: #1c1526;
+}
+@media (max-width: 1280px) {
+	.main-title {
+		font-size: calc(33px + 57 * ((100vw - 320px) / (1280 - 320)));
+	}
+	.news-section--press {
+		padding-top: calc(0px + 98 * ((100vw - 320px) / (1280 - 320)));
+	}
+}

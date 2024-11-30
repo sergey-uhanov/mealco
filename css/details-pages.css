@@ -1,0 +1,230 @@
+@charset "UTF-8";
+.details-first-screen {
+  margin-top: 132px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  -moz-column-gap: 175px;
+       column-gap: 175px;
+  padding-bottom: 80px;
+  padding-left: 30px;
+}
+.details-first-screen__text-block {
+  max-width: 536px;
+  font-size: 30px;
+  line-height: 1.3;
+  font-family: "Nunito Sans";
+  font-weight: 300;
+  flex: 1 1 300px;
+}
+.details-first-screen__text-block img {
+  width: 249px;
+  margin-bottom: 32px;
+}
+.details-first-screen__image-block {
+  max-width: 594px;
+  width: 100%;
+  min-width: 300px;
+  flex: 1 1 300px;
+  overflow: hidden;
+}
+.details-first-screen__image-block img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.button-back {
+  position: absolute;
+  top: 5px;
+  left: 1px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 100px;
+  width: 83px;
+  height: 83px;
+  box-shadow: 7px 0px 0px 0px rgb(0, 0, 0);
+  display: flex;
+  padding: 17px;
+  transition: all 0.1s ease;
+}
+
+.button-back:active {
+  box-shadow: 0px 0px 0px 0px rgb(0, 0, 0);
+  transform: translateX(7px);
+}
+
+@media (max-width: 1280px) {
+  .details-first-screen__text-block img {
+    width: calc(100px + 150 * (100vw - 320px) / 640);
+  }
+}
+@media (max-width: 960px) {
+  .button-back {
+    z-index: 100;
+    top: -120px;
+    left: auto;
+    right: 73px;
+    transform: scale(0.7);
+  }
+}
+@media (max-width: 806px) {
+  .details-first-screen__image-block {
+    margin-top: 20px;
+    height: calc(240px + 160 * (100vw - 320px) / 480);
+  }
+}
+.author {
+  padding: 80px 0 80px 30px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+.author__text-block {
+  order: 3;
+  max-width: 536px;
+  font-size: 30px;
+  line-height: 1.3;
+  font-family: "Nunito Sans";
+  font-weight: 350;
+  flex: 1 1 350px;
+}
+.author__title {
+  order: 1;
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 1.1;
+  margin-bottom: 13px;
+}
+.author__text {
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.author__image-block {
+  max-width: 500px;
+  width: 100%;
+  flex: 1 1 350px;
+  overflow: hidden;
+}
+.author__image-block img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.author__image-block-response {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .author__title {
+    font-size: calc(35px + 30 * (100vw - 320px) / 960);
+  }
+}
+@media (max-width: 806px) {
+  .author__image-block {
+    order: 2;
+  }
+  .author__text-block {
+    order: 3;
+    margin-bottom: 20px;
+  }
+  .author__image-block {
+    display: none;
+  }
+  .author__image-block-response {
+    display: block;
+    margin: 20px 0;
+    height: calc(240px + 160 * (100vw - 320px) / 480);
+  }
+}
+.menu__controls {
+  display: none;
+}
+.menu__title {
+  padding: 38px 0 31px 30px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-size: 65px;
+  line-height: 1.2;
+  font-weight: 900;
+  margin-bottom: 63px;
+}
+.menu__subtitle {
+  margin-bottom: 40px;
+  font-size: 32px;
+  padding-left: 30px;
+}
+.menu__unit {
+  padding-left: 30px;
+  margin-bottom: 100px;
+}
+.menu .no-img {
+  height: calc(150px + 126 * (100vw - 320px) / 960);
+}
+
+@media (max-width: 1000px) {
+  .menu__groups {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .menu__group {
+    width: 100%;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+  }
+  .menu__group.active {
+    opacity: 1;
+    max-height: 100%; /* Достаточно большое значение, чтобы уместить содержимое */
+  }
+  .menu__controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    scroll-behavior: smooth; /* Плавный скролл */
+  }
+  .menu__controls::-webkit-scrollbar {
+    display: none; /* Скрыть скроллбар для браузеров на WebKit */
+  }
+  .menu__control {
+    cursor: pointer;
+    color: #7d8585;
+    flex-shrink: 0; /* Кнопки не сжимаются */
+    white-space: nowrap; /* Кнопки не переносятся на новую строку */
+  }
+  .menu__control.active {
+    color: #000;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .menu__control.active::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #000;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+  }
+}
+.cirle-img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 120px !important;
+}

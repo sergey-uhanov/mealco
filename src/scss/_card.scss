@@ -1,0 +1,174 @@
+.card {
+	padding: 0 35px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #000;
+	border-radius: 15px;
+	max-width: 394px;
+	width: 100%;
+	height: 386px;
+	margin: 0px 0 35px 0;
+	background-color: #fff;
+	position: relative;
+	z-index: 10;
+	@include box-shadow-card;
+	transform-style: preserve-3d;
+
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0.2px; /* Смещаем вниз */
+		right: -3px; /* Смещаем вправо */
+		width: 9.5px; /* Учитываем отступы */
+		height: 12px; /* Высота карточки */
+		background-color: #000; /* Цвет грани */
+		z-index: -1; /* Под основной карточкой */
+		clip-path: polygon(0 0, 0% 0, 100% 100%, 0 100%);
+		transform: translateZ(-10px) rotate(-7deg);
+	}
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: -9px; /* Смещаем вниз */
+		left: 5px; /* Смещаем вправо */
+		width: 9.5px; /* Учитываем отступы */
+		height: 12px; /* Высота карточки */
+		background-color: #000; /* Цвет грани */
+		z-index: -1; /* Под основной карточкой */
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0%);
+		transform: translateZ(-10px) rotate(-8deg);
+	}
+
+	&__icon {
+		margin-bottom: 13px;
+	}
+
+	&__title {
+		font-size: 1.625rem;
+		line-height: 1.2;
+		margin-bottom: 7.28px;
+		text-align: center;
+	}
+
+	&__text {
+		font-family: "Nunito Sans";
+		font-weight: 300;
+		font-size: 1.5rem;
+		line-height: 1.4;
+		text-align: center;
+		max-width: 289px;
+	}
+}
+@media (max-width: 1280px) {
+	.card {
+		height: calc(322px + 76 * ((100vw - 320px) / (1280 - 320)));
+		padding: 0 calc(16px + 12 * ((100vw - 320px) / (1280 - 320)));
+		&__mark {
+			margin-right: 8px !important;
+		}
+		&__title {
+			font-size: calc(20px + 6 * ((100vw - 320px) / (1280 - 320)));
+		}
+		&__text {
+			font-size: calc(18px + 6 * ((100vw - 320px) / (1280 - 320)));
+		}
+	}
+	.card--card-partner {
+		padding: calc(19px + 29 * ((100vw - 320px) / (1280 - 320))) calc(28px + 20 * ((100vw - 320px) / (1280 - 320)))
+			calc(24px + 24 * ((100vw - 320px) / (1280 - 320))) calc(22px + 26 * ((100vw - 320px) / (1280 - 320))) !important;
+		.card__item {
+			align-items: center;
+		}
+		.card__item-text {
+			font-size: calc(16px + 8 * ((100vw - 320px) / (1280 - 320)));
+		}
+	}
+}
+
+.wide-card-wrapper {
+	display: flex;
+	gap: 43px;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	z-index: 0;
+}
+.card--card-wide {
+	height: auto;
+
+	max-height: 276px;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+	align-items: start;
+	max-width: 611px;
+	flex: 1 1 500px;
+	display: flex;
+	flex-direction: row;
+	z-index: 0;
+
+	.card__text-side {
+		height: 100%;
+		padding: 0 43px 0 35px;
+		display: flex;
+		align-items: center;
+		font-size: 1.75rem;
+		font-weight: 900;
+		line-height: 1.22;
+	}
+	img {
+		height: 100%;
+		width: 100%;
+		max-width: 240px;
+	}
+}
+.card--card-wide-text-left {
+	justify-content: start;
+	.card__text-side {
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+		padding-left: 30px;
+
+		.card__title {
+			width: 100%;
+			text-align: left;
+		}
+	}
+	.card__price {
+		font-family: "Nunito Sans";
+		font-weight: 300;
+		display: block;
+	}
+}
+@media (max-width: 1280px) {
+	.wide-card-wrapper {
+		gap: 30px;
+	}
+	.card--card-wide.card {
+		margin: 0;
+		.card__text-side {
+			font-size: calc(17px + 11 * ((100vw - 320px) / (1280 - 320))) !important;
+		}
+	}
+	.card--card-wide {
+		&__text-side {
+		}
+		img {
+			width: calc(126px + 114 * ((100vw - 320px) / (1280 - 320)));
+		}
+	}
+}
+.menu {
+	&__unit {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		justify-content: start;
+	}
+}

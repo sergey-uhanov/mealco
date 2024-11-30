@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>Brands</title>
+	<link rel="stylesheet" href="./css/styles.css">
+	 <link rel="stylesheet" href="./css/header.css">
+</head>
+<body>
+	<header class="header-brands">
+  <div class="container">
+    
+    <div class="header header-brands">
+      <div class="header__burger-btn" aria-label="Toggle navigation" id="burgerMenu" ></div>
+      <div class="header__logo">
+        <a href="/" class="header__logo-link"><img src="./assets/icons/logo.svg" alt="logo"></a>
+      </div>
+      <div class="header__menu " id="mobileNav">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="brands.html" class="header__link">Brands</a>
+            </li>
+            <li class="header__item ">
+              <a href="press.html" class="header__link">Press</a>
+            </li>
+          </ul>
+        </nav>
+        <button onclick="openPopup()" class="header__button openPopup">Join our waitlist!</button>
+      </div> 
+    </div>
+  </div>
+</header> 
+
+
+	 
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span id="closePopup" class="close"><img src="./assets/icons/close.svg" alt=""></span>
+     <div id="popupWrapper"  class="popup-wrapper">
+		 <form id="popupForm" class="popup-form " action="#" method="GET">
+			<ul class="popup-form__input-grup">
+				<li class="popup-form__title">Join our waitlist</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="name">Name</label>
+				<input class="popup-form__input"  id="name" type="text" name="name"  required>
+				</li>
+				<li class="popup-form__item"> 
+					<label class="popup-form__label" for="LastName">Last name</label>
+				<input class="popup-form__input"  id="LastName" type="text" name="LastName"   required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="phone">Phone</label>
+				<input class="popup-form__input"  id="phone" type="tel" name="phone"   required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="email">Email</label>
+				<input class="popup-form__input"  id="email" type="email" name="email" required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="restaurantName">Restaurant name</label>
+				<input class="popup-form__input"  id="restaurantName" type="text" name="restaurantName"  required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="restaurantAddress">Restaurant address</label>
+				<input class="popup-form__input"  id="restaurantAddress" type="text" name="restaurantAddress" required>
+				</li>
+				
+			</ul>
+			<button id="popupSubmitBtn" class="wide-btn wide-btn--popup  wide-btn--popup-responsive" type="submit" >Submit</button>
+			<section class=" for-partners for-partners--popup">
+		
+			<div class="for-partners__wrapper">
+						<h4 class="for-partners__title">Mealco’s partners get </h4>
+				<div class="card card--card-partner">
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+				</div>
+				
+			</div>
+		
+	 </section>
+	 
+	 <button id="popupSubmitBtn" class="wide-btn wide-btn--popup" type="submit" >Submit</button>
+		</form>
+		<div id="popupSuccess" class="success-massage hidden">
+			<h3 class="success-massage__title">Thank you for your interest!</h3>
+			<div class="success-massage__subtitle">Someone from our team will be reaching out soon. In the meantime, check our brands.</div>
+			<button id="closePopupSuccess" class="wide-btn"  >Check brands</button>
+		</div>
+	  </div>
+    </div>
+  </div>
+	<main class="main-brands">	
+		<div class="container">	
+		<div class="main-brands__wrapper">
+			<div class="main-title--brands ">		
+			<h2 class="main-title__title ">
+			Mealco brands
+			</h2>
+			<p class="small-text  small-text--brands">
+			Mealco’s collection of high-demand brands can be operated
+with minimal equipment and training
+		</p>
+		</div>
+		<div class="square-card-wrapper"> 
+				<div class="square-card-item">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto.webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/MoreishLogo_CMYKCopy1.webp" alt="product logo">
+							<button class="small-btn"><a href="/moreish.html
+								">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="square-card-item">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(1).webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/1.webp" alt="product logo">
+							<button class="small-btn"><a href="/cayenne.html
+								">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="square-card-item">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(2).webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/mochidoki1.webp" alt="product logo">
+							<button class="small-btn"><a href="/mochidoki.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="square-card-item">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(3).webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/Maskgroup.webp" alt="product logo">
+							<button class="small-btn"><a href="/nuchas.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="square-card-item">
+					<div class="card card--card-square">
+						<img src="./assets/card/Pressedphoto(1).webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/NEW_PressedLogoCopy1.webp" alt="product logo">
+							<button class="small-btn"><a href="/pressed.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="square-card-item">
+					<div class="card card--card-square">
+						<img src="./assets/card/AmpleHillsPhoto.webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/image3.webp" alt="product logo">
+							<button class="small-btn"><a href="/ampel-hills.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="square-card-item">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(1).webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/image6.webp" alt="product logo">
+							<button class="small-btn"><a href="/num-pang.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="square-card-item">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(6).webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/Maskgroup(1).webp" alt="product logo">
+							<button class="small-btn"><a href="/poutine.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="square-card-item">
+					<div class="card card--card-square">
+						<img src="./assets/card/Photo.webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/properindian1.webp" alt="product logo">
+							<button class="small-btn"><a href="/proper-indian.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="square-card-item">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(7).webp" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/Urbanremedylogo1.webp" alt="product logo">
+							<button class="small-btn"><a href="/urban-remedy.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+		
+	</main>
+	<footer>
+	<div class="container">
+		<div class="footer">
+			<div class="footer__logo">
+				<img src="./assets/icons/footerLogo.svg" alt="Logo">
+			</div>
+			<div class="footer__links">
+				<div class="footer__copyright">2022 © Mealco</div>
+				<nav class="footer__menu">
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Careers</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Brands</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Press</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+</footer>
+	   <script  src="./js/main.js"></script>
+	   <script  src="./js/swiper.js"></script>
+</body>
+</html>

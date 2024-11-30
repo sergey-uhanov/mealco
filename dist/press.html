@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/styles.css">
+	 <link rel="stylesheet" href="../css/header.css">
+	<title>Press</title>
+</head>
+<body>
+	<header class="header-press">
+  <div class="container">
+    
+    <div class="header header-press">
+      <div class="header__burger-btn" aria-label="Toggle navigation" id="burgerMenu" ></div>
+      <div class="header__logo">
+        <a href="/" class="header__logo-link"><img src="./assets/icons/logo.svg" alt="logo"></a>
+      </div>
+      <div class="header__menu " id="mobileNav">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="brands.html" class="header__link">Brands</a>
+            </li>
+            <li class="header__item ">
+              <a href="press.html" class="header__link">Press</a>
+            </li>
+          </ul>
+        </nav>
+        <button onclick="openPopup()" class="header__button openPopup">Join our waitlist!</button>
+      </div> 
+    </div>
+  </div>
+</header> 
+
+
+	 
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span id="closePopup" class="close"><img src="./assets/icons/close.svg" alt=""></span>
+     <div id="popupWrapper"  class="popup-wrapper">
+		 <form id="popupForm" class="popup-form " action="#" method="GET">
+			<ul class="popup-form__input-grup">
+				<li class="popup-form__title">Join our waitlist</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="name">Name</label>
+				<input class="popup-form__input"  id="name" type="text" name="name"  required>
+				</li>
+				<li class="popup-form__item"> 
+					<label class="popup-form__label" for="LastName">Last name</label>
+				<input class="popup-form__input"  id="LastName" type="text" name="LastName"   required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="phone">Phone</label>
+				<input class="popup-form__input"  id="phone" type="tel" name="phone"   required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="email">Email</label>
+				<input class="popup-form__input"  id="email" type="email" name="email" required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="restaurantName">Restaurant name</label>
+				<input class="popup-form__input"  id="restaurantName" type="text" name="restaurantName"  required>
+				</li>
+				<li class="popup-form__item">
+					<label class="popup-form__label" for="restaurantAddress">Restaurant address</label>
+				<input class="popup-form__input"  id="restaurantAddress" type="text" name="restaurantAddress" required>
+				</li>
+				
+			</ul>
+			<button id="popupSubmitBtn" class="wide-btn wide-btn--popup  wide-btn--popup-responsive" type="submit" >Submit</button>
+			<section class=" for-partners for-partners--popup">
+		
+			<div class="for-partners__wrapper">
+						<h4 class="for-partners__title">Mealco’s partners get </h4>
+				<div class="card card--card-partner">
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+				</div>
+				
+			</div>
+		
+	 </section>
+	 
+	 <button id="popupSubmitBtn" class="wide-btn wide-btn--popup" type="submit" >Submit</button>
+		</form>
+		<div id="popupSuccess" class="success-massage hidden">
+			<h3 class="success-massage__title">Thank you for your interest!</h3>
+			<div class="success-massage__subtitle">Someone from our team will be reaching out soon. In the meantime, check our brands.</div>
+			<button id="closePopupSuccess" class="wide-btn"  >Check brands</button>
+		</div>
+	  </div>
+    </div>
+  </div>
+	<main class="main-press">			
+		<div class="main-title ">
+		<div class="container">
+			<h2 class="main-title__title ">
+			Hot off the press!
+		</h2>
+		</div>
+	</div>
+		<section class="news-section news-section--press">
+		<div class="container">
+			<div class="wide-card-wrapper wide-card-wrapper--press">
+				<div class="card card--card-wide">
+				<img src="./assets/card/wideCard/Photo.webp" alt="logo">
+				<div class="card__text-side">
+					Mealco raises $7M to launch new delivery-centric restaurants
+				</div>
+			</div>
+			<div class="card card--card-wide">
+				<img src="./assets/card/wideCard/Photo(2).webp" alt="logo">
+				<div class="card__text-side">
+					Startup Mealco wants to streamline
+the virtual
+brand model
+				</div>
+			</div>
+			<div class="card card--card-wide">
+				<img src="./assets/card/wideCard/Photo(3).webp" alt="logo">
+				<div class="card__text-side">
+					Virtual restaurant start-up lands $7M in funding
+				</div>
+			</div>
+			<div class="card card--card-wide">
+				<img src="./assets/card/wideCard/Photo(1).webp" alt="logo">
+				<div class="card__text-side">
+					Mealco Raises $7M to Enable Chefs to Launch and Manage Virtual...
+				</div>
+			</div>
+			<div class="card card--card-wide">
+				<img src="./assets/card/wideCard/Photo(4).webp" alt="logo">
+				<div class="card__text-side">
+					‘Restaurant-as-a-Service’ Emerges for the Next Normal
+				</div>
+			</div>
+			<div class="card card--card-wide">
+				<img src="./assets/card/wideCard/Photo(5).webp" alt="logo">
+				<div class="card__text-side">
+					A Hot Chicken "Ghost Kitchen" Now Delivering In Brooklyn, Queens, And Manhattan
+				</div>
+			</div>
+			</div>
+			
+		</div>		
+	</section>
+		<div class="container">
+			<p class="small-text">
+			For press inquires, email us at press@mealco.co
+		</p>
+		</div>
+		
+	</main>
+	<footer>
+	<div class="container">
+		<div class="footer">
+			<div class="footer__logo">
+				<img src="./assets/icons/footerLogo.svg" alt="Logo">
+			</div>
+			<div class="footer__links">
+				<div class="footer__copyright">2022 © Mealco</div>
+				<nav class="footer__menu">
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Careers</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Brands</a></li>
+						<li class="footer__menu-item"><a href="#" class="footer__menu-link">Press</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+</footer>
+	    <script  src="./js/pop.js"></script>
+</body>
+</html>

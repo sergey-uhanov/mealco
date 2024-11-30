@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+	 <link rel="stylesheet" href="./css/styles.css">
+	 <link rel="stylesheet" href="./css/header.css">	 
+	<title>Mealco</title>
+	 
+</head>
+<body>
+	@@include('../partials/header.html', {headerClass: 'header-index'})
+	@@include('../partials/popup.html')
+	<section class="first-screen">
+		<div class="container">
+			<h1 class="first-screen__title">Monetize your restaurant’s 
+			unused capacity 
+		</h1>
+		<div class="first-screen__text">
+				Multiply online revenues by fulfilling Mealco orders through third party deliveries
+			using your existing kitchen and staff
+		</div>
+		<button onclick="openPopup()"  class="wide-btn ">Join our waitlist!!</button>
+		
+		<img class="first-screen__img  first-screen__img-orange-circle" src="./assets/home/YELLOWCIRCLE.svg" alt="figure">
+		<div class="first-screen__blue-curl-wrapper">
+			<img class="first-screen__img  first-screen__img-blue-curl" src="./assets/home/Group.svg" alt="figure">
+		</div>
+		</div>
+		<div class="first-screen__img-wrapper">
+			
+		<img class="first-screen__img  first-screen__img-red-points" src="./assets/home/REDCIRCLES.svg" alt="figure">
+		
+		<img class="first-screen__img  first-screen__img-purpule-curl" src="./assets/home/PURPLEC.svg" alt="figure">
+		<img class="first-screen__img  first-screen__img-blue-circle" src="./assets/home/BLUECIRCLE.svg" alt="figure">
+		<div class="first-screen__img-wrapper-inner">
+			<img class="first-screen__img  first-screen__img-pink-sticks" src="./assets/home/PINKSTICKS.svg" alt="figure">
+		</div>
+				
+		</div> 
+	</section>
+	 <div class="plug">
+		<h4 class="plug__title">
+			It's easy to join
+		</h4>
+	</div>
+	 <section class="card-section">
+		<div class="container"> 
+			<div class="card-wrapper">
+				<div class="card">
+					<div class="card__icon">
+						<img src="./assets/home/Donut3.svg" alt="icon">
+					</div>
+					<h5 class="card__title">
+						We match you with your soulmate Mealco brand
+					</h5>
+					<p class="card__text">
+						by listening to your unique needs and leveraging our
+data generated from
+thousands of orders.
+					</p>
+				</div>
+				<div class="card">
+					
+					<div class="card__icon">
+						<img src="./assets/home/Group64(1).svg" alt="icon">
+					</div>
+					<h5 class="card__title">
+						We provide you with a
+free tablet and printer
+					</h5>
+					<p class="card__text">
+						You receive all orders <br/> in a single device.
+					</p>
+				</div>
+				<div class="card">
+					<div class="card__icon">
+						<img src="./assets/home/Coin1.svg" alt="icon">
+					</div>
+					<h5 class="card__title">
+						You are all set!					
+					</h5>
+					<p class="card__text">
+						Start earning incremental revenues from a new brand every day.
+					</p>
+				</div>
+			</div>
+		</div>
+	 </section>
+	 
+	 <section class="for-partners">
+		<div class="container">
+			<div class="for-partners__wrapper">
+						<h4 class="for-partners__title">Mealco’s partners get </h4>
+				<div class="card card--card-partner">
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+					<div class="card__item">
+						<div class="card__mark"><img src="./assets/home/Vector.svg" alt="mark"></div>
+						<p class="card__item-text">Exclusivity over their territory</p>
+					</div>
+				</div>
+				<div class="for-partners__subtitle">
+					Concerned about food delivery costs?
+				</div>
+				<p class="for-partners__text">
+					We’ve got you covered! Mealco pays all <br/>
+					third-party delivery fees
+				</p>
+			</div>
+		</div>
+	 </section>
+	 
+	 <section class="slider-section">
+	<div class="container">
+		<h4 class="slider-section__title">Mealco’s collection of high-demand brands can be operated with minimal
+equipment and training</h4>
+			<div class="swiper">
+			
+				<div class="swiper-wrapper"> 
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto.png" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/MoreishLogo_CMYKCopy1.png" alt="product logo">
+							<button class="small-btn"><a href="/moreish.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(1).png" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/1.png" alt="product logo">
+							<button class="small-btn"><a href="/cayenne.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(2).png" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/mochidoki1.png" alt="product logo">
+							<button class="small-btn"><a href="/mochidoki.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(3).png" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/Maskgroup.png" alt="product logo">
+							<button class="small-btn"><a href="/nuchas.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Pressedphoto(1).png" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/NEW_PressedLogoCopy1.png" alt="product logo">
+							<button class="small-btn"><a href="/pressed.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/AmpleHillsPhoto.png" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/image3.png" alt="product logo">
+							<button class="small-btn"><a href="/ampel-hills.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(1).png" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/image6.png" alt="product logo">
+							<button class="small-btn"><a href="/num-pang.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(6).png" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/Maskgroup(1).png" alt="product logo">
+							<button class="small-btn"><a href="/poutine.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Photo.png" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/properindian1.png" alt="product logo">
+							<button class="small-btn"><a href="/proper-indian.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="card card--card-square">
+						<img src="./assets/card/Belliwelliphoto(7).png" alt="image of product">
+						<div class="card__text-block">
+							<img src="./assets/card/icon/Urbanremedylogo1.png" alt="product logo">
+							<button class="small-btn"><a href="/urban-remedy.html">Learn more!</a></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-block">				
+			<div class="swiper-button-prev"><img src="./assets/icons/Arrow.svg" alt=""></div>
+			<div class="swiper-button-next"><img src="./assets/icons/Arrow.svg" alt=""></div>
+			</div>
+			
+</div>
+	</div>
+  
+	 </section>
+	 
+	 <section class="promotion-section">
+		<div class="container">
+			 <div class="promotion">
+				<div class="promotion__text-block">
+					<img  class="promotion__logo-responsive" src="./assets/card/icon/MoreishLogo_CMYKCopy1.png" alt="logo">
+					<h4 class="promotion__title">Vince</h4>
+					<p class="promotion__subtitle">Owner, Koo Restaurant</p>
+					<p class="promotion__text">“Moreish is what sparked our interest in Mealco - the minimal impact on our labor and resources creates a unique and simple solution for generating value in a market with limited staffing”</p>
+					<div class="promotion__card card">In just 3 months,  Mealco operates  <span>65%</span> <br> of Koo’s delivery business</div>
+				</div>
+				<div class="promotion__img-block">
+					
+				</div>
+				<img  class="promotion__logo" src="./assets/card/icon/MoreishLogo_CMYKCopy1.png" alt="logo">
+			 </div>
+		</div>
+	 </section>
+	 
+	 <section class="call-action-section">
+		<div class="container">	
+			<h1 class="call-action-section__title">Ready to start earning additional revenues?
+			</h1>
+		<button class="wide-btn">Join our waitlist!</button>
+		</div>
+	 </section>
+	 <div class="plug">
+		<h4 class="plug__title">
+			Mealco in the news
+		</h4>
+	</div>
+	
+	<section class="news-section">
+		<div class="container">
+			<div class="wide-card-wrapper">
+				<div class="card card--card-wide">
+				<img src="./assets/card/wideCard/Photo.png" alt="logo">
+				<div class="card__text-side">
+					Mealco raises $7M to launch new delivery-centric restaurants
+				</div>
+			</div>
+			<div class="card card--card-wide">
+				<img src="./assets/card/wideCard/Photo(2).png" alt="logo">
+				<div class="card__text-side">
+					Startup Mealco wants to streamline
+the virtual
+brand model
+				</div>
+			</div>
+			<div class="card card--card-wide">
+				<img src="./assets/card/wideCard/Photo(3).png" alt="logo">
+				<div class="card__text-side">
+					Virtual restaurant start-up lands $7M in funding
+				</div>
+			</div>
+			<div class="card card--card-wide">
+				<img src="./assets/card/wideCard/Photo(1).png" alt="logo">
+				<div class="card__text-side">
+					Mealco Raises $7M to Enable Chefs to Launch and Manage Virtual...
+				</div>
+			</div>
+			</div>
+			<button class="mid-btn mid-btn--news">Read more!</button>
+		</div>
+	</section>
+	@@include('../partials/footer.html') 
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+	    <script  src="./js/main.js"></script>
+	    <script  src="./js/swiper.js"></script>
+</body>
+</html>
